@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<STYLE>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: serif;
+    background-color: #fadddd;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  section {
+    align-content: center;
+    background-color: #cfc5bc;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 1%;
+    margin-top: 30px; 
+  }
+ 
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  header p {
+    margin: 1rem 0 0;
+  }
+
+  h2 {
+    color: #310db4;
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+  }
+ ol li{
+    margin-bottom: 0rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+ }
+ 
+  a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  dl dt {
+    font-weight: bold;
+    color: #2a2323;
+    margin-top: 1rem;
+  }
+  
+  dl dd {
+    margin-left: 1.5rem;
+    color: #151212;
+  }
+ 
+  @media (max-width: 600px) {
+    section {
+        padding: 1.5rem;
+    }
+  
+    header {
+        padding: 1.5rem;
+    }
+  }
+  .first{
+    text-align:justify;
+  text-justify:inter-word;
+  }
+  .new{
+    color: #555;
+  }
+
+  
+ 
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #781b91;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  font-family: serif;
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 1rem; 
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ffffff; 
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: #d381e9;
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.content {
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+  #home {
+    display: inline-block; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: white; 
+    background-color: #6A1B9A; 
+   
+    padding: 0.5rem 1rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.topic {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 1rem;
+  background: linear-gradient(135deg, #bca6c9, #AB47BC); 
+  color: rgb(38, 34, 34); 
+  padding: 1.5rem;
+  border-radius: 15px; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  margin: 1.5rem auto; 
+  max-width: 600px;
+  text-align: left;
+  border: 2px solid rgba(255, 255, 255, 0.4); /* Subtle border for definition */
+}
+
+.topic h2 {
+  font-size: 2rem; 
+  margin-bottom: 1rem;
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+.topic dl {
+  margin: 1rem 0; 
+}
+
+.topic dt {
+  font-weight: bold; 
+  margin-top: 1rem; 
+}
+
+.topic dd {
+  margin-left: 1rem; 
+}
+
+.topic p {
+  margin-bottom: 1rem; 
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+}</STYLE>
+
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a style="color:rgb(255, 255, 255)"  href="/topic.github.io/blocks/home/home.html">Home</a></li>
+      <li><a style="color:rgb(255, 255, 255)"  href="/topic.github.io/index.html">Project Introduction</a></li>
+      <li><a style="color:rgb(255, 255, 255)"  href="/topic.github.io/blocks/learningref/teamlearning.html">Learning Reflections</a></li>
+    </ul>
+  </nav>
+  <section>
+    <header>
+      <h1 id="home" style="font-family: serif;">Course  Introduction</h1>
+    </header>
+    <main>
+      <ul>
+        <li id="course-intro">
+          <p class="first">
+            <h4 style="font-family: 'Times New Roman', serif;" >Course Introduction:</h4> Design and Analysis of Algorithms course is helped us to learn how to solve problems taht are seen around us in smart and efficient ways. It focuses on how to design algorithms for different problems and how to make sure that the provided solutions work well and quickly. Starting with basic ideas and moving to advanced concepts, the course helps us understand, analyze, and create algorithms that are both correct and fast. <br>
+            
+            <br><b>Data Structures and Algorithms Studied So Far:</b><br>
+            Our learning experience so far has been challenging. As we started by learning how to measure how fast and efficient algorithms are, using concepts like time complexity, space complexity.
+            <br>  
+            <ol>
+                <li><h4>Binary Search Trees :</h4>Used to organize and quickly search through data arranged in a hierarchy.</li>
+                <li><h4>AVL Trees :</h4>  A more balanced version of BSTs, making search faster.</li>
+                <li><h4>Red-Black Trees :</h4> A self-balancing binary search tree that guarantees logarithmic height and fast operations.</li>
+                <li><h4>2-3 Trees :</h4> A self-balancing search tree used to store and retrieve data efficiently</li>
+            </ol>
+            
+            <p>For each of this topic, we focused on both understanding the theory and learning how to use these tools effectively in practice.</p>
+            <br>
+            <b>Connecting the Course with Real-Time Applications:</b>
+            <p>
+                Algorithms are behind many things we use every day.AS we saw during our class activities how they power search engines, social media, and even GPS systems. This course helps us to understand the logic behind these technologies.
+            </p>
+            
+            <ul>
+                <li><b>Search Algorithms in Everyday Use:</b> We came to know how DFS and BFS are essential for exploring connections in networks during the case study . For example, DFS can find all possible paths between two friends on social media, while BFS finds the shortest way to connect them.</li>
+                <li><b>Managing Huge Amount Of Data In Filesystem:</b> AVL and Red-Black Trees ensure data is organized for quick access in systems like databases, which must efficiently retrieve records among millions.We also saw how heap is  used to arrange the data in more efficient way how to retrive the data from the  database.</li>
+            </ul>
+        <li>
+          <div class="topic" style="font-family: serif;" >
+          <h2 style="font-family: 'Roboto', serif;">Portfolio Topic</h2>
+          To create a city design and solve the real world problems
+          <dl>
+            <dt>Course Name</dt>
+            <dd>Design and analysis of Algorithms</dd>
+
+            <dt>Course Code</dt>
+            <dd>24ECAP205</dd>
+            <dt>Course Instructor</dt>
+            <dd>Prakash Hegade</dd>
+
+            <dt>University</dt>
+            <dd>KLE Technological University</dd>
+
+            <dt>Portfolio Topic/Domain</dt>
+            <dd>City design</dd>
+
+          </dl>
+          
+      </div>
+        </li>
+      
+      </ul>
+  </section>
+  </main>
+</body>
+
+</html>
