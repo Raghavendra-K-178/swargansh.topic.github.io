@@ -1,222 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: serif;
+            background-color: #fadddd;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        section {
+            align-content: center;
+            background-color: #cfc5bc;
+            padding: 2rem;
+            width: 100%;
+            max-width: 1200px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-left: 1%;
+            margin-top: 30px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        header p {
+            margin: 1rem 0 0;
+        }
+
+        h2 {
+            color: #310db4;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            padding: 0.75rem;
+            border-radius: 5px;
+        }
+
+        ol li {
+            margin-bottom: 0rem;
+            padding: 0.7rem;
+            border-radius: 5px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        dl dt {
+            font-weight: bold;
+            color: #2a2323;
+            margin-top: 1rem;
+        }
+
+        dl dd {
+            margin-left: 1.5rem;
+            color: #151212;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 1.5rem;
+            }
+
+            header {
+                padding: 1.5rem;
+            }
+        }
+
+        .first {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .new {
+            color: #555;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #781b91;
+            width: 100%;
+            z-index: 1000;
+            padding: 0.5rem 1rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            font-family: serif;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 0 1rem;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            background-color: #d381e9;
+            transform: scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: #781b91;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #9b2d9d;
+            transform: scale(1.05);
+        }
+
+        /* Additional Styling */
+        .find {
+            margin: 10px 0;
+        }
+
+    </style>
 </head>
-    <style>* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: serif;
-    background-color: #fadddd;
-    margin: 0;
-    padding: 20px;
-    min-height: 100vh;
-  }
-  section {
-    align-content: center;
-    background-color: #cfc5bc;
-    padding: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-left: 1%;
-    margin-top: 30px; 
-  }
- 
-  
-  header h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  header p {
-    margin: 1rem 0 0;
-  }
 
-  h2 {
-    color: #310db4;
-    margin-bottom: 1rem;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border-radius: 5px;
-  }
- ol li{
-    margin-bottom: 0rem;
-    padding: 0.7rem;
-    border-radius: 5px;
- }
- 
-  a {
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-
-  dl dt {
-    font-weight: bold;
-    color: #2a2323;
-    margin-top: 1rem;
-  }
-  
-  dl dd {
-    margin-left: 1.5rem;
-    color: #151212;
-  }
- 
-  @media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
-  
-    header {
-        padding: 1.5rem;
-    }
-  }
-  .first{
-    text-align:justify;
-  text-justify:inter-word;
-  }
-  .new{
-    color: #555;
-  }
-
-  
- 
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: #781b91;
-  width: 100%;
-  z-index: 1000;
-  padding: 0.5rem 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  border-radius: 10px;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  font-family: serif;
-  justify-content: center;
-  align-items: center; 
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li {
-  margin: 0 1rem; 
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: #ffffff; 
-  padding: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.nav-list a:hover {
-  background-color: #d381e9;
-  transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.content {
-  padding: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-  #home {
-    display: inline-block; 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 2.5rem; 
-    font-weight: bold; 
-    color: white; 
-    background-color: #6A1B9A; 
-   
-    padding: 0.5rem 1rem; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    margin: 0 auto;
-    text-align: center;
-}
-
-.topic {
-  font-family: 'Montserrat', sans-serif; 
-  font-size: 1rem;
-  background: linear-gradient(135deg, #bca6c9, #AB47BC); 
-  color: rgb(38, 34, 34); 
-  padding: 1.5rem;
-  border-radius: 15px; 
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  margin: 1.5rem auto; 
-  max-width: 600px;
-  text-align: left;
-  border: 2px solid rgba(255, 255, 255, 0.4); /* Subtle border for definition */
-}
-
-.topic h2 {
-  font-size: 2rem; 
-  margin-bottom: 1rem;
-  text-align: center; 
-  text-transform: uppercase; 
-  letter-spacing: 2px; 
-}
-
-.topic dl {
-  margin: 1rem 0; 
-}
-
-.topic dt {
-  font-weight: bold; 
-  margin-top: 1rem; 
-}
-
-.topic dd {
-  margin-left: 1rem; 
-}
-
-.topic p {
-  margin-bottom: 1rem; 
-  font-size: 1.1rem; 
-  line-height: 1.6; 
-}</style>
 <body>
     <nav class="navbar">
         <ul class="nav-list">
-          <li><a style="color:rgb(255, 255, 255)"  href="/swargansh.topic.github.io/home.html">Home</a></li>
-          <li><a style="color:rgb(255, 255, 255)"  href="/swargansh.topic.github.io/index.html">Project Introduction</a></li>
-          <li><a style="color:rgb(255, 255, 255)"  href="/swargansh.topic.github.io/teamlearning.html">Learning Reflections</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/swargansh.topic.github.io/home.html">Home</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/swargansh.topic.github.io/index.html">Project Introduction</a></li>
+            <li><a style="color:rgb(255, 255, 255)" href="/swargansh.topic.github.io/teamlearning.html">Learning Reflections</a></li>
         </ul>
     </nav>
-   
-    
-</header>
 
     <section>
         <h2>City Design</h2>
@@ -224,97 +191,56 @@
             <li><strong> <h4 class="dis">Name of the city</strong></h4></li>
             <li><p class="first"> <b> <h4 class="dis">"SWARGANSH" - A GLIMPSE OF HEAVEN</h4></b> <br>
 
-              <h4 class ="dis">  Our designed city, Swargansh, reimagines Delhi (28.7° N, 77.1° E) with innovative concepts inspired by the Design and Analysis of Algorithms course. 
-                Spanning an area of 1,500 sq. km, the city is meticulously divided into functional zones :Residential Zone: 35%,Commercial Zone: 10%,Industrial Zone: 
-                10%,Public Spaces: 15%,Agricultural Zone: 10%,Transport Infrastructure: 10% and Tourist Spots: 10% .Designed to be self-sustainable, Swargansh accommodates
-                 a population of 5,580,000, with the capacity to host an additional 400,000 migrants and tourists. Its revenue models and sustainability 
-                initiatives ensure long-term viability and resilience, making it a modern utopia that balances growth with ecological harmony.
-            </h4></li></p>
+                <h4 class="dis"> Our designed city, Swargansh, reimagines Delhi (28.7° N, 77.1° E) with innovative concepts inspired by the Design and Analysis of Algorithms course. 
+                    Spanning an area of 1,500 sq. km, the city is meticulously divided into functional zones :Residential Zone: 35%,Commercial Zone: 10%,Industrial Zone: 
+                    10%,Public Spaces: 15%,Agricultural Zone: 10%,Transport Infrastructure: 10% and Tourist Spots: 10% .Designed to be self-sustainable, Swargansh accommodates
+                     a population of 5,580,000, with the capacity to host an additional 400,000 migrants and tourists. Its revenue models and sustainability 
+                    initiatives ensure long-term viability and resilience, making it a modern utopia that balances growth with ecological harmony.
+                </h4></li></p>
                 <li>
-    <center>
-        <img src="/topic.github.io/images/WhatsApp Image 2024-12-11 at 17.57.19_6db79461.jpg" alt="Profile Picture" width="80%">
-    </center>
-    <br>
-</li>
+                    <center>
+                        <img src="/topic.github.io/images/WhatsApp Image 2024-12-11 at 17.57.19_6db79461.jpg" alt="Profile Picture" width="80%">
+                    </center>
+                    <br>
+                </li>
 
-<section class="description">
-    <div class="link-section">
-        <a class="custom-link" href="/topic.github.io/pdfs/CITY PLAN 2.pdf" target="_blank">
-            Click Here to see the full description of the project
-        </a>
-    </div>
-    <div class="link-section">
-        <a class="custom-link" href="/swargansh.github.io/Businesscases.html">
-            Click Here to see the business cases
-        </a>
-    </div>
-</section>
+                <section class="description">
+                    <div class="link-section">
+                        <!-- Full Project Description Button -->
+                        <a href="/topic.github.io/pdfs/CITY PLAN 2.pdf" target="_blank" class="button">
+                            Click Here to see the full description of the project
+                        </a>
+                    </div>
+                    <div class="link-section">
+                        <!-- Business Cases Button -->
+                        <a href="/swargansh.github.io/Businesscases.html" class="button">
+                            Click Here to see the business cases
+                        </a>
+                    </div>
+                </section>
 
-        </ul>
+            </ul>
 
-        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
-    </section>
-    <section>
-        <div>
-            <h2 id="meet">Meet My team 🕵️</h2>
-        </div>
-        <div class="team-container">
-            <div class="team-member">
-                <img src="images/WhatsApp Image 2024-12-01 at 12.06.45_6bec6350.jpg" alt="Team Member 1" class="profile-pic">
-                <div class="member-info">
-                    <p style="font-family: 'Georgia', 'Times New Roman', Times, serif; " class="name">Raghavendra K</p>
-                    <p class="usn">USN:01FE23BCS178</p>
-                    <P>ROLL .NO: 207</P>
-                    <p class="case-study">
-                        <a href="" target="_blank"></a>
-                    </p>
-                </div>
-            </div>
-    
-            <div class="team-member">
-                <img src="/topic.github.io/image/" alt="Team Member 2" class="profile-pic">
-                <div class="member-info">
-                    <p style="font-family: 'Georgia', 'Times New Roman', Times, serif; " class="name">Parashuram </p>
-                    <p class="usn">USN:01FE23BCS196</p>
-                    <P>ROLL .NO: 247</P>
-                    <p class="case-study">
-                        
-                    </p>
-                </div>
-            </div>
-    
-            <div class="team-member">
-                <img src="/topic.github.io/images/WhatsApp Image 2024-12-08 at 13.40.25_c7c1beba.jpg" alt="Team Member 3" class="profile-pic">
-                <div class="member-info">
-                    <p style="font-family: 'Georgia', 'Times New Roman', Times, serif; " class="name">Manu</p>
-                    <p class="usn">USN:01FE23BCS190</p>
-                    <P>ROLL .NO: 268</P>
-                    <p class="case-study">
-                        
-                    </p>
-                </div>
-            </div>
-    
-            <div class="team-member">
-                <img src="/topic.github.io/images/IMG_20241208_133528.jpg" alt="Team Member 4" class="profile-pic">
-                <div class="member-info">
-                    <p style="font-family: 'Georgia', 'Times New Roman', Times, serif; " class="name">Akash</p>
-                    <p class="usn">USN:01FE23BCS179</p>
-                    <P>ROLL .NO: 241</P>
-                    <p class="case-study">
-                        
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-    <h2 style="color :rgb(34, 34, 211)" >🌐 Find Me Online</h2>
-        <ul>
+            <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
+        </section>
 
-            <div class="find"><li><a href="https://github.com/Mallikarjun-P-23" target="_blank">GitHub</a></li></div>
-            <div class ="find"><li><a href="https://www.linkedin.com/in/mallikarjun-paroji-680083313/" target="_blank">LinkedIn</a></li></div>
-        </ul>
-    </section>
+        <section>
+            <div>
+                <h2 id="meet">Meet My team 🕵️</h2>
+            </div>
+            <div class="team-container">
+                <!-- Team member details go here -->
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color :rgb(34, 34, 211)">🌐 Find Me Online</h2>
+            <ul>
+
+                <div class="find"><li><a href="https://github.com/Mallikarjun-P-23" target="_blank">GitHub</a></li></div>
+                <div class="find"><li><a href="https://www.linkedin.com/in/mallikarjun-paroji-680083313/" target="_blank">LinkedIn</a></li></div>
+            </ul>
+        </section>
 </body>
+
 </html>
