@@ -1,109 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies with Algorithms</title>
+    <title>Smart City Solutions Using Algorithms</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            margin: 20px;
+            background-color: #1e1e2f;
+            color: #e0e0e0;
         }
-
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-bottom: 2px solid #333;
+        h1, h2, h3 {
+            color: #81a1c1;
         }
-
-        h1 {
-            color: #00d1b2;
-            margin-bottom: 10px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        section {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #333;
-            border-radius: 5px;
-        }
-
-        h2 {
-            color: #f39c12;
-        }
-
-        p {
-            margin: 10px 0;
-        }
-
         a {
-            display: inline-block;
-            padding: 10px 15px;
-            margin-top: 10px;
-            background-color: #00bfff;
-            color: #ffffff;
+            color: #88c0d0;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
         }
-
         a:hover {
-            background-color: #00d1b2;
+            text-decoration: underline;
+            color: #5e81ac;
+        }
+        .solution {
+            background: #2e3440;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .solution h3 {
+            color: #8fbcbb;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .indicator {
+            font-style: italic;
+            color: #a3be8c;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #616e88;
         }
     </style>
+    </style>
 </head>
-
 <body>
-    <header>
-        <h1>Industrial and Institutional Case Studies</h1>
-    </header>
+    <h1>Smart City Solutions Using Algorithms</h1>
 
-    <div class="container">
-        <!-- Industrial Case Study -->
-        <section>
-            <h2>Industrial Case Study</h2>
+    <h2>1. Industrial Strategies for Smart City Growth</h2>
+    <div class="solution">
+        <h3>Problem 1: Uneven Industrial Growth</h3>
+        <p><strong>SDG Goal:</strong> Goal 9 (Industry, Innovation, and Infrastructure)</p>
+        <p><strong>Indicator:</strong> 9.2.1 (Manufacturing value added as a proportion of GDP and per capita)</p>
+        <p><strong>Solution:</strong> Use <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm" target="_blank">Prim's Algorithm</a> to design a minimum spanning tree that prioritizes connecting underdeveloped regions to industrial hubs.</p>
+    </div>
+    <div class="solution">
+        <h3>Problem 2: Resource Allocation Inefficiency</h3>
+        <p><strong>SDG Goal:</strong> Goal 12 (Responsible Consumption and Production)</p>
+        <p><strong>Indicator:</strong> 12.2.1 (Material footprint per capita and per GDP)</p>
+        <p><strong>Solution:</strong> Use <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra's Algorithm</a> to optimize resource delivery paths, minimizing time and costs.</p>
+    </div>
 
-            <h3>Problem 1: Optimizing Logistics and Supply Chain</h3>
-            <p><strong>SDG:</strong> Goal 9 - Industry, Innovation, and Infrastructure</p>
-            <p><strong>Solution:</strong> Use Dijkstra's Algorithm to find the shortest paths for transportation routes.</p>
-            <a href="dijkstra_algorithm_code.html">Get Dijkstra's Algorithm Code</a>
+    <h2>2. Institutional Framework for Smart City Governance</h2>
+    <div class="solution">
+        <h3>Problem 1: Lack of Transparency in Governance</h3>
+        <p><strong>SDG Goal:</strong> Goal 16 (Peace, Justice, and Strong Institutions)</p>
+        <p><strong>Indicator:</strong> 16.6.1 (Primary government expenditures as a proportion of the original approved budget)</p>
+        <p><strong>Solution:</strong> Use <a href="https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm" target="_blank">Rabin-Karp Algorithm</a> for efficient pattern matching to detect discrepancies in financial records.</p>
+    </div>
+    <div class="solution">
+        <h3>Problem 2: Ineffective Citizen Engagement</h3>
+        <p><strong>SDG Goal:</strong> Goal 11 (Sustainable Cities and Communities)</p>
+        <p><strong>Indicator:</strong> 11.3.2 (Proportion of cities with a direct participation structure)</p>
+        <p><strong>Solution:</strong> Use <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">Breadth-First Search (BFS)</a> to ensure all communities are included in participatory governance initiatives.</p>
+    </div>
 
-            <h3>Problem 2: Efficient Energy Distribution in Industrial Parks</h3>
-            <p><strong>SDG:</strong> Goal 7 - Affordable and Clean Energy</p>
-            <p><strong>Solution:</strong> Use Prim's Algorithm to create a minimum spanning tree for energy distribution.</p>
-            <a href="prim_algorithm_code.html">Get Prim's Algorithm Code</a>
-        </section>
-
-        <!-- Institutional Case Study -->
-        <section>
-            <h2>Institutional Case Study</h2>
-
-            <h3>Problem 1: Optimizing Campus Connectivity</h3>
-            <p><strong>SDG:</strong> Goal 11 - Sustainable Cities and Communities</p>
-            <p><strong>Solution:</strong> Use Kruskal's Algorithm to design the most efficient pathway network.</p>
-            <a href="kruskal_algorithm_code.html">Get Kruskal's Algorithm Code</a>
-
-            <h3>Problem 2: Data Retrieval for Large Institutional Libraries</h3>
-            <p><strong>SDG:</strong> Goal 4 - Quality Education</p>
-            <p><strong>Solution:</strong> Use BFS for hierarchical data retrieval in the library catalog.</p>
-            <a href="bfs_algorithm_code.html">Get BFS Algorithm Code</a>
-        </section>
+    <h2>3. Environmental Sustainability</h2>
+    <div class="solution">
+        <h3>Problem 1: Excessive Carbon Emissions</h3>
+        <p><strong>SDG Goal:</strong> Goal 13 (Climate Action)</p>
+        <p><strong>Indicator:</strong> 13.2.2 (Total greenhouse gas emissions per year)</p>
+        <p><strong>Solution:</strong> Use <a href="https://en.wikipedia.org/wiki/Kruskal%27s_algorithm" target="_blank">Kruskal’s Algorithm</a> to create a minimum spanning tree that minimizes energy usage and emissions.</p>
+    </div>
+    <div class="solution">
+        <h3>Problem 2: Water Resource Depletion</h3>
+        <p><strong>SDG Goal:</strong> Goal 6 (Clean Water and Sanitation)</p>
+        <p><strong>Indicator:</strong> 6.4.1 (Change in water-use efficiency over time)</p>
+        <p><strong>Solution:</strong> Use <a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm" target="_blank">Floyd-Warshall Algorithm</a> to optimize water distribution by calculating the shortest paths in the water supply network.</p>
     </div>
 </body>
-
 </html>
