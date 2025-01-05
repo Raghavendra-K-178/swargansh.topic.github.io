@@ -1,354 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Meet My Team</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: serif;
-            background-color: #fadddd;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #f0e4d7, #d1c3b6);
             margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
         }
-
-        section {
-            align-content: center;
-            background-color: #cfc5bc;
-            padding: 2rem;
-            width: 100%;
-            max-width: 1200px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-left: 1%;
-            margin-top: 30px;
-        }
-
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        header p {
-            margin: 1rem 0 0;
-        }
-
-        h2 {
-            color: #310db4;
-            margin-bottom: 1rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-            padding: 0.75rem;
-            border-radius: 5px;
-        }
-
-        ol li {
-            margin-bottom: 0rem;
-            padding: 0.7rem;
-            border-radius: 5px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        dl dt {
-            font-weight: bold;
-            color: #2a2323;
-            margin-top: 1rem;
-        }
-
-        dl dd {
-            margin-left: 1.5rem;
-            color: #151212;
-        }
-
-        @media (max-width: 600px) {
-            section {
-                padding: 1.5rem;
-            }
-
-            header {
-                padding: 1.5rem;
-            }
-        }
-
-        .first {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-
-        .new {
-            color: #555;
-        }
-
-        /* Navigation bar */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: #781b91;
-            width: 100%;
-            z-index: 1000;
-            padding: 0.5rem 1rem;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-        }
-
-        .nav-list {
-            list-style: none;
-            display: flex;
-            font-family: serif;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-list li {
-            margin: 0 1rem;
-        }
-
-        .nav-list a {
-            text-decoration: none;
-            color: #ffffff;
-            padding: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-list a:hover {
-            background-color: #d381e9;
-            transform: scale(1.02);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-        }
-
-        /* Button Styles */
-        .button {
-            background-color: #781b91;
+        .team-header {
+            background-color: #6c63ff;
             color: white;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            font-weight: bold;
+            padding: 20px 40px;
+            border-radius: 15px;
+            font-size: 2.5em;
             text-align: center;
-            border-radius: 8px;
-            display: inline-block;
-            margin-top: 20px;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #9b2d9d;
-            transform: scale(1.05);
-        }
-
-        /* Additional Styling */
-        .find {
-            margin: 10px 0;
-        }
-
-    </style>
-</head>
-
-<body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a style="color:rgb(255, 255, 255)" href="/swargansh.topic.github.io/home.html">Home</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="/swargansh.topic.github.io/index.html">Project Introduction</a></li>
-            <li><a style="color:rgb(255, 255, 255)" href="/swargansh.topic.github.io/teamlearning.html">Learning Reflections</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>City Design</h2>
-        <ul>
-            <li><strong> <h4 class="dis">Name of the city</strong></h4></li>
-            <li><p class="first"> <b> <h4 class="dis">"SWARGANSH" - A GLIMPSE OF HEAVEN</h4></b> <br>
-
-                <h4 class="dis"> Our designed city, Swargansh, reimagines Delhi (28.7° N, 77.1° E) with innovative concepts inspired by the Design and Analysis of Algorithms course. 
-                    Spanning an area of 1,500 sq. km, the city is meticulously divided into functional zones :Residential Zone: 35%,Commercial Zone: 10%,Industrial Zone: 
-                    10%,Public Spaces: 15%,Agricultural Zone: 10%,Transport Infrastructure: 10% and Tourist Spots: 10% .Designed to be self-sustainable, Swargansh accommodates
-                     a population of 5,580,000, with the capacity to host an additional 400,000 migrants and tourists. Its revenue models and sustainability 
-                    initiatives ensure long-term viability and resilience, making it a modern utopia that balances growth with ecological harmony.
-                </h4></li></p>
-                <li>
-                    <center>
-                        <img src="/topic.github.io/images/WhatsApp Image 2024-12-11 at 17.57.19_6db79461.jpg" alt="Profile Picture" width="80%">
-                    </center>
-                    <br>
-                </li>
-
-                <section class="description">
-                    <div class="link-section">
-                        <!-- Full Project Description Button -->
-                        <a href="/topic.github.io/pdfs/CITY PLAN 2.pdf" target="_blank" class="button">
-                            Click Here to see the full description of the project
-                        </a>
-                    </div>
-                    <div class="link-section">
-                        <!-- Business Cases Button -->
-                        <a href="/swargansh.topic.github.io/Businesscases.html" class="button">
-                            Click Here to see the business cases
-                        </a>
-                    </div>
-                </section>
-
-            </ul>
-
-            <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
-        </section>
-
-        <section>
-            <div>
-                <h2 id="meet">Meet My team 🕵️</h2>
-            </div>
-            <div class="team-container">
-                <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Details</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         }
         .team-container {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            justify-content: center;
-            padding: 20px;
-        }
-        .team-header {
             width: 100%;
-            text-align: center;
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 20px;
+            max-width: 1000px;
         }
         .team-member {
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
             padding: 20px;
-            text-align: center;
-            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .team-member h3 {
-            margin: 0;
-            color: #444;
-            font-size: 1.2em;
-        }
-        .team-member p {
-            margin: 5px 0;
-            color: #666;
-            font-size: 1em;
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         .team-member img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             object-fit: cover;
+            border: 3px solid #6c63ff;
             margin-bottom: 10px;
         }
-        .upload-button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            cursor: pointer;
+        .team-info {
+            text-align: center;
         }
-        .upload-button:hover {
-            background-color: #0056b3;
+        .team-info h3 {
+            margin: 0;
+            font-size: 1.4em;
+            color: #333;
+        }
+        .team-info p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
         }
     </style>
 </head>
 <body>
+    <div class="team-header">
+        Meet My Team 🕵️
+    </div>
     <div class="team-container">
-        <div class="team-header">
-            Meet My Team 🕵️
+        <div class="team-member">
+            <img src="placeholder.jpg" alt="Raghavendra.k">
+            <div class="team-info">
+                <h3>Raghavendra.K</h3>
+                <p>USN: 01FE23BCS178</p>
+                <p>ROLL NO: 207</p>
+            </div>
         </div>
         <div class="team-member">
-            <img src="placeholder.jpg" alt="Raghavendra Kolakar">
-            <h3>Team Member 1: RAGHAVENDRA.KOLAKAR</h3>
-            <p>USN: 01FE23BCS178</p>
-            <p>ROLL NO: 207</p>
-            <a href="#" class="upload-button">Upload Image</a>
+            <img src="placeholder.jpg" alt="Parashuram.w">
+            <div class="team-info">
+                <h3>Parashuram.W</h3>
+                <p>USN: 01FE23BCS196</p>
+                <p>ROLL NO: 247</p>
+            </div>
         </div>
         <div class="team-member">
-            <img src="placeholder.jpg" alt="Parashuram Watkar">
-            <h3>Team Member 2: PARASHURAM.WATKAR</h3>
-            <p>USN: 01FE23BCS196</p>
-            <p>ROLL NO: 247</p>
-            <a href="#" class="upload-button">Upload Image</a>
+            <img src="placeholder.jpg" alt="Manu.b">
+            <div class="team-info">
+                <h3>Manu.B</h3>
+                <p>USN: 01FE23BCS190</p>
+                <p>ROLL NO: 268</p>
+            </div>
         </div>
-        <div class="team-member">
-            <img src="placeholder.jpg" alt="Manu B">
-            <h3>Team Member 3: MANU.B</h3>
-            <p>USN: 01FE23BCS190</p>
-            <p>ROLL NO: 268</p>
-            <a href="#" class="upload-button">Upload Image</a>
-        </div>
-        <div class="team-member">
+         <div class="team-member">
             <img src="placeholder.jpg" alt="Akash">
-            <h3>Team Member 4: Akash</h3>
-            <p>USN: 01FE23BCS179</p>
-            <p>ROLL NO: 241</p>
-            <a href="#" class="upload-button">Upload Image</a>
-        </div>
+            <div class="team-info">
+                <h3>Akash</h3>
+                <p>USN: 01FE23BCS179</p>
+                <p>ROLL NO: 241</p>
     </div>
 </body>
-</html>
-
-            </div>
-        </section>
-
-        <section>
-            <h2 style="color :rgb(34, 34, 211)">🌐 Find Me Online</h2>
-            <ul>
-
-                <div class="find"><li><a href="https://github.com/Raghavendra-K-178" target="_blank">GitHub</a></li></div>
-                <div class="find"><li><a href="https://www.linkedin.com/in/raghavendra-kolakar-9206b7321//" target="_blank">LinkedIn</a></li></div>
-            </ul>
-        </section>
-</body>
-
 </html>
