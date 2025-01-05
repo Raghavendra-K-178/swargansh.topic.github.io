@@ -1,110 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet My Team</title>
+    <title>Portfolio - Swargansh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom right, #f0e4d7, #d1c3b6);
+            font-family: 'Poppins', sans-serif;
+            background-color: #fadddd;
             margin: 0;
             padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             min-height: 100vh;
         }
-        .team-header {
-            background-color: #6c63ff;
+
+        header {
+            background-color: #781b91;
             color: white;
-            padding: 20px 40px;
-            border-radius: 15px;
-            font-size: 2.5em;
+            padding: 1rem 2rem;
             text-align: center;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            width: 100%;
-            max-width: 1000px;
-        }
-        .team-member {
-            background: linear-gradient(to bottom, #ffffff, #e6e6e6);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            padding: 20px;
+
+        .navbar {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.2s, box-shadow 0.2s;
+            justify-content: center;
+            background-color: #9b2d9d;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .team-member:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .nav-list a:hover {
+            background-color: #c381e9;
+        }
+
+        section {
+            background-color: #cfc5bc;
+            margin: 20px auto;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+
+        h2 {
+            color: #310db4;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #781b91;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #9b2d9d;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .team-member {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            width: 200px;
+        }
+
         .team-member img {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #6c63ff;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
-        .team-info {
+
+        footer {
             text-align: center;
-        }
-        .team-info h3 {
-            margin: 0;
-            font-size: 1.4em;
-            color: #333;
-        }
-        .team-info p {
-            margin: 5px 0;
-            font-size: 1em;
-            color: #555;
+            margin-top: 20px;
+            padding: 1rem;
+            background-color: #781b91;
+            color: white;
+            border-radius: 8px;
         }
     </style>
 </head>
+
 <body>
-    <div class="team-header">
-        Meet My Team 🕵️
-    </div>
-    <div class="team-container">
-        <div class="team-member">
-            <img src="placeholder.jpg" alt="Raghavendra.k">
-            <div class="team-info">
-                <h3>Raghavendra.K</h3>
+    <header>
+        <h1>Swargansh - A Glimpse of Heaven</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/index.html">Project Introduction</a></li>
+            <li><a href="/teamlearning.html">Learning Reflections</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>City Design</h2>
+        <p>
+            "Swargansh" is our vision of a futuristic city inspired by the Design and Analysis of Algorithms course. It reimagines Delhi, blending technological advancements and innovative designs to solve modern challenges and create an eco-friendly, sustainable environment.
+        </p>
+        <img src="/images/city-design.jpg" alt="City Design Image">
+        <a href="/pdfs/CITY_PLAN.pdf" class="button">View Full Project</a>
+    </section>
+
+    <section>
+        <h2>Meet the Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="/images/member1.jpg" alt="Raghavendra.K">
+                <h3>Raghavendra Kolakar</h3>
                 <p>USN: 01FE23BCS178</p>
-                <p>ROLL NO: 207</p>
+                <p>Roll No: 207</p>
             </div>
-        </div>
-        <div class="team-member">
-            <img src="placeholder.jpg" alt="Parashuram.w">
-            <div class="team-info">
-                <h3>Parashuram.W</h3>
+            <div class="team-member">
+                <img src="/images/member2.jpg" alt="Parashuram.W">
+                <h3>Parashuram Watkar</h3>
                 <p>USN: 01FE23BCS196</p>
-                <p>ROLL NO: 247</p>
+                <p>Roll No: 247</p>
             </div>
-        </div>
-        <div class="team-member">
-            <img src="placeholder.jpg" alt="Manu.b">
-            <div class="team-info">
+            <div class="team-member">
+                <img src="/images/member3.jpg" alt="Manu.B">
                 <h3>Manu.B</h3>
                 <p>USN: 01FE23BCS190</p>
-                <p>ROLL NO: 268</p>
+                <p>Roll No: 268</p>
+            </div>
+            <div class="team-member">
+                <img src="/images/member4.jpg" alt="Akash">
+                <h3>Akash.N</h3>
+                <p>USN: 01FE23BCS179</p>
+                <p>Roll No: 241</p>
             </div>
         </div>
-         <div class="team-member">
-            <img src="placeholder.jpg" alt="Akash">
-            <div class="team-info">
-                <h3>Akash</h3>
-                <p>USN: 01FE23BCS179</p>
-                <p>ROLL NO: 241</p>
-    </div>
+    </section>  
+            <h2 style="color :rgb(34, 34, 211)">🌐 Find Me Online</h2>
+            <ul>
+
+                <div class="find"><li><a href="https://github.com/Raghavendra-K-178" target="_blank">GitHub</a></li></div>
+                <div class="find"><li><a href="https://www.linkedin.com/in/raghavendra-kolakar-9206b7321//" target="_blank">LinkedIn</a></li></div>
+            </ul>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Swargansh Project. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
